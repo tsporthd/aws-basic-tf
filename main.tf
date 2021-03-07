@@ -25,28 +25,24 @@ provider "aws" {
 
 data "aws_ami" "aws-linux" {
   most_recent = true
-  owners = [
-    "amazon"]
+  owners      = ["amazon"]
 
   filter {
-    name = "name"
-    values = [
-      "amzn-ami-hvm*"]
+    name   = "name"
+    values = ["amzn-ami-hvm*"]
   }
 
   filter {
-    name = "root-device-type"
-    values = [
-      "ebs"]
+    name   = "root-device-type"
+    values = ["ebs"]
   }
 
   filter {
-    name = "virtualization_type"
-    values = [
-      "hvm"]
+    name   = "virtualization-type"
+    values = ["hvm"]
   }
-
 }
+
 
 ##################################################################################
 # RESOURCES
