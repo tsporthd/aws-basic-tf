@@ -1,5 +1,0 @@
-aws_access_key = ""
-aws_secret_key = ""
-key_name = ""
-aws_region = ""
-ssh_private_key = ""
